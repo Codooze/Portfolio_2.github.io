@@ -26,9 +26,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Linters-Microverse <a name="about-project"></a>
+# 📖 Jeison's Porfolio <a name="about-project"></a>
 
-Linters-Microverse is a welcome greeting to Microverse, and a test for linters.
+This is a portfolio project, that is using some linter checks, the project is mobile first, and it is responsive.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,13 +43,16 @@ Linters-Microverse is a welcome greeting to Microverse, and a test for linters.
 
 ### Key Features <a name="key-features"></a>
 
-- it welcomes the users with a well styled greeting
+- Mobile first
+- Responsive design
+- Linter checks
+- Good looking 👌
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-A new developer could use this as a template to start a new project that is using some linter checks, and a quite decent template.
+A new developer could use this as a template to start a new project that is using some linter checks, and a quite decent template to start with.
 
 To get a local copy up and running, follow these steps.
 
@@ -66,7 +69,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-Example: `git clone https://github.com/Mehr-o-maah/linters-Microverse.git <your-folder-name>` on your terminal.
+Example: `git clone https://github.com/Mehr-o-maah/Portfolio_2.git <your-folder-name>` on your terminal.
 
 ### Install
 
@@ -108,8 +111,8 @@ You can deploy this project using, vercel or any prefer deployment platform.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] The greeting should have a button to make it fancier
-- [ ] A dragon should be displayed in the footer, because why not?
+- [ ] Make it adaptive to desktop
+- [ ] Add more sections like projects, and about me etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +134,7 @@ If you like this project, give it a ⭐️! and if you want to support me, follo
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank, Microverse for this well made template.
+I would like to thank, Microverse for this amazing opportunity, and the amazing code reviewers for their support and feedback.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
