@@ -5,7 +5,7 @@
 
 /* Mobile first */
 body {
-  font-family: "Poppins", "Open Sans", sans-serif;
+  font-family: Poppins, sans-serif;
   background: #f7f7f9;
 }
 
@@ -33,9 +33,11 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #header_container {
   padding: 1rem;
 }
+
 #header_container > nav {
   background: #fff;
   display: flex;
