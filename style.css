@@ -80,3 +80,7 @@ section {
   display: flex;
   gap: 1rem;
 }
+
+#socials > div:nth-child(3) {
+  display: flex;
+}
