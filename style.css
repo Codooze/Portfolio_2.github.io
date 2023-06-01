@@ -81,6 +81,7 @@ section {
   gap: 1rem;
 }
 
-#socials > div:nth-child(3) {
+#socials > div {
   display: flex;
+  justify-content: center;
 }
