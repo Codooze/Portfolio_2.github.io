@@ -22,6 +22,9 @@ section {
   gap: 0.75rem;
   border-radius: 0 0 0 7rem;
   background-size: contain;
+  background-image: url("assets/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #intro_container {
@@ -30,18 +33,15 @@ section {
   justify-content: center;
   height: 100%;
   gap: 0.75rem;
-  padding: 1rem;
-  background-image: url("assets/header-shapes\ mobile@2x.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0 24px;
 }
 
 #header_container {
-  padding: 1rem;
+  padding: 0 24px;
 }
 
 #header_container > nav {
-  background: #fff;
+  background: #fff0;
   display: flex;
   justify-content: space-between;
   align-items: center;
