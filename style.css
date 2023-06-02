@@ -247,6 +247,11 @@ section {
   padding-right: 32px;
 }
 
+.dropdown-btn > .isActive_false {
+  transform: rotate(-0.25turn);
+  padding: 0 0 65px 0;
+}
+
 .dropdown-content {
   display: flex;
   flex-direction: column;
