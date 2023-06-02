@@ -20,7 +20,7 @@ section {
 
 #presentation_container {
   gap: 0.75rem;
-  border-radius: 0 0 0 7rem;
+  border-radius: 0 0 0 100px;
   background-size: contain;
   background-image: url("assets/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
@@ -93,6 +93,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   gap: 5.5rem; /* 88px ÷ 16px = 5.5rem */
   padding: 7.125rem 1.5rem; /* 114px ÷ 16px = 7.125rem, 24px ÷ 16px = 1.5rem */
+  background: #f7f7f9;
 }
 
 #works_container > div {
@@ -192,4 +193,23 @@ section {
   border-radius: 0.5rem;
   background: #fff;
   align-self: flex-start;
+}
+/* TODO redondear la ezquina superior del section del about me*/
+#about_me_container {
+  padding: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  border-radius: 0 100px 0 0;
+}
+
+#about_me_description_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#about_me_description_container > button {
+  width: 162px;
+  margin-top: 12px;
 }
