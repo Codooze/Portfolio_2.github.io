@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400,500,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 
 /* Mobile first */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, "Open Sans", sans-serif;
   background: #f7f7f9;
 }
 
@@ -31,10 +33,13 @@ section {
   padding: 1rem;
   background-image: url("assets/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 #header_container {
   padding: 1rem;
 }
+
 #header_container > nav {
   background: #fff;
   display: flex;
@@ -63,18 +68,20 @@ section {
 }
 
 .h2_gray_title {
-  font-family: "Poppins";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
-
   display: flex;
   align-items: center;
-
   color: #172b4d;
 }
 
 #socials {
   display: flex;
   gap: 1rem;
+}
+
+#socials > div {
+  display: flex;
+  justify-content: center;
 }
