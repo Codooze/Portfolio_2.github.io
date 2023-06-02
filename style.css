@@ -21,7 +21,6 @@ section {
 #presentation_container {
   gap: 0.75rem;
   border-radius: 0 0 0 100px;
-  background-size: contain;
   background-image: url("assets/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,6 +80,11 @@ section {
   gap: 1rem;
 }
 
+.card_projectType_container > div {
+  color: #c1c7d0;
+  font-size: 1rem;
+}
+
 #socials > div {
   display: flex;
   justify-content: center;
@@ -120,7 +124,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   gap: 12px;
 }
 
@@ -140,11 +143,6 @@ section {
 .card_projectType_container > .canopy {
   color: #344563;
   line-height: 1rem;
-}
-
-.card_projectType_container > div {
-  color: #c1c7d0;
-  font-size: 1rem;
 }
 
 .card_projectType_container > .project_type,
