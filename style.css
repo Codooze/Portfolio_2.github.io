@@ -194,14 +194,18 @@ section {
   background: #fff;
   align-self: flex-start;
 }
-/* TODO redondear la ezquina superior del section del about me*/
+
 #about_me_container {
   height: fit-content;
-  padding: 24px;
+  padding: 114px 24px 0;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
   border-radius: 0 100px 0 0;
+}
+
+#about_me_description {
+  width: clamp(270px, 88%, 100%);
 }
 
 #about_me_description_container {
@@ -234,10 +238,15 @@ section {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  justify-content: space-between;
 }
 
 .dropdown-btn > p {
   padding-left: 12px;
+}
+
+.dropdown-btn > img {
+  padding-right: 32px;
 }
 
 .dropdown-content {
@@ -267,4 +276,10 @@ section {
 .dropdown-content > li > p {
   position: relative;
   left: 24px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #dfe1e6;
+  border: none;
 }
