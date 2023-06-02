@@ -196,6 +196,7 @@ section {
 }
 /* TODO redondear la ezquina superior del section del about me*/
 #about_me_container {
+  height: fit-content;
   padding: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -212,4 +213,58 @@ section {
 #about_me_description_container > button {
   width: 162px;
   margin-top: 12px;
+}
+
+#skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+#skills_container > .dropdown {
+  list-style: none;
+}
+
+.dropdown-btn {
+  width: 327px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.dropdown-btn > p {
+  padding-left: 12px;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.dropdown-content > li {
+  width: 303px;
+  height: 66.72px;
+  color: #253858;
+  background: #f7f7f9;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.dropdown-content > li > img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 12px;
+}
+
+.dropdown-content > li > p {
+  position: relative;
+  left: 24px;
 }
