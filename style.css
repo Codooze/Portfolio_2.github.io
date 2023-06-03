@@ -20,8 +20,10 @@ section {
 
 #presentation_container {
   gap: 0.75rem;
-  border-radius: 0 0 0 7rem;
-  background-size: contain;
+  border-radius: 0 0 0 100px;
+  background-image: url("assets/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #intro_container {
@@ -30,18 +32,15 @@ section {
   justify-content: center;
   height: 100%;
   gap: 0.75rem;
-  padding: 1rem;
-  background-image: url("assets/header-shapes\ mobile@2x.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0 24px;
 }
 
 #header_container {
-  padding: 1rem;
+  padding: 0 24px;
 }
 
 #header_container > nav {
-  background: #fff;
+  background: #fff0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,10 +77,219 @@ section {
 
 #socials {
   display: flex;
-  gap: 1rem;
 }
 
-#socials > div {
+.card_projectType_container > div {
+  color: #c1c7d0;
+  font-size: 1rem;
+}
+
+#socials > ul {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.dropdown-btn > img {
+  padding-right: 32px;
+}
+
+.dropdown-content > li > img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 12px;
+}
+
+#socials img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Work section */
+#works_container {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  gap: 5.5rem; /* 88px ÷ 16px = 5.5rem */
+  padding: 7.125rem 1.5rem; /* 114px ÷ 16px = 7.125rem, 24px ÷ 16px = 1.5rem */
+  background: #f7f7f9;
+}
+
+#works_container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 1rem 1rem 2rem;
+  gap: 24px;
+  border: 1px solid #dfe1e6;
+}
+
+.card_projectType_container {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card_description_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card_description_container > h3 {
+  width: 270px;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+.card_projectType_container > p {
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+.card_projectType_container > .canopy {
+  color: #344563;
+  line-height: 1rem;
+}
+
+.card_projectType_container > .project_type,
+.project_year {
+  color: #7a869a;
+}
+
+.card_description {
+  width: clamp(270px, 95%, 100%);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #344563;
+}
+
+.card_languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.card_languages > li {
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #ebebff;
+}
+
+.card_btn {
+  width: 7.875rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 0.5rem;
+  background: #fff;
+  align-self: flex-start;
+}
+
+#about_me_container {
+  height: fit-content;
+  padding: 114px 24px 0;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  border-radius: 0 100px 0 0;
+}
+
+#about_me_description {
+  width: clamp(270px, 88%, 100%);
+}
+
+#about_me_description_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#about_me_description_container > button {
+  width: 162px;
+  margin-top: 12px;
+}
+
+#skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+#skills_container > .dropdown {
+  list-style: none;
+}
+
+.dropdown-btn {
+  width: 327px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  justify-content: space-between;
+}
+
+.dropdown-btn > p {
+  padding-left: 12px;
+}
+
+.dropdown-btn > .isActive_false {
+  transform: rotate(-0.25turn);
+  padding: 0 0 65px 0;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.dropdown-content > li {
+  width: 303px;
+  height: 66.72px;
+  color: #253858;
+  background: #f7f7f9;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.dropdown-content > li > p {
+  position: relative;
+  left: 24px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #dfe1e6;
+  border: none;
 }
