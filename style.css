@@ -77,7 +77,6 @@ section {
 
 #socials {
   display: flex;
-  gap: 1rem;
 }
 
 .card_projectType_container > div {
@@ -85,9 +84,17 @@ section {
   font-size: 1rem;
 }
 
-#socials > div {
+#socials > ul {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+#socials img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Work section */
