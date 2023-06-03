@@ -92,6 +92,17 @@ section {
   align-items: center;
 }
 
+.dropdown-btn > img {
+  padding-right: 32px;
+}
+
+.dropdown-content > li > img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 12px;
+}
+
 #socials img {
   width: 20px;
   height: 20px;
@@ -250,10 +261,6 @@ section {
   padding-left: 12px;
 }
 
-.dropdown-btn > img {
-  padding-right: 32px;
-}
-
 .dropdown-btn > .isActive_false {
   transform: rotate(-0.25turn);
   padding: 0 0 65px 0;
@@ -274,13 +281,6 @@ section {
   display: flex;
   align-items: center;
   border-radius: 8px;
-}
-
-.dropdown-content > li > img {
-  width: 48px;
-  height: 48px;
-  position: relative;
-  left: 12px;
 }
 
 .dropdown-content > li > p {
