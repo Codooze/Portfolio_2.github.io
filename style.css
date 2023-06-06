@@ -299,6 +299,7 @@ section {
 
 @media (width >= 768px) {
   /* problably make a column of 1fr give it a width and center it */
+  
   /* then align the contend inside using flexbox */
 
   #works_container {
