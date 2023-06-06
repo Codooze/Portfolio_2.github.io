@@ -311,13 +311,20 @@ section {
   #works_container > .cards {
     height: 496px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 0;
   }
 
   .card_img_container {
     grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+  }
+
+  .card_img_container > img {
+    width: 100%;
+    margin: 20px 20px;
   }
 
   .card_description_container {
