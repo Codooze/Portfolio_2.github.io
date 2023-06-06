@@ -294,3 +294,37 @@ section {
   background-color: #dfe1e6;
   border: none;
 }
+
+/* TODO Desktop: >=768px, Use grid & flexBox   */
+
+@media (width >= 768px) {
+  /* problably make a column of 1fr give it a width and center it */
+  /* then align the contend inside using flexbox */
+
+  #works_container {
+    display: flex;
+    flex-direction: column;
+    gap: 142px;
+    padding: 142px;
+  }
+
+  #works_container > .cards {
+    height: 496px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .card_img_container {
+    grid-column: 1 / 2;
+  }
+
+  .card_description_container {
+    grid-column: 2 / 3;
+  }
+
+  .card_btn {
+    grid-column: 2/ 3;
+  }
+}
