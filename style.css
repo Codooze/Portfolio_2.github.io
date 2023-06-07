@@ -416,6 +416,11 @@ button:disabled {
     grid-column: 2/ 3;
   }
 
+  #contact_form_container {
+    background-image: url("assets/background-formDesktop.svg");
+    background-position: center;
+  }
+
   #contact_form_container ul {
     align-items: center;
   }
