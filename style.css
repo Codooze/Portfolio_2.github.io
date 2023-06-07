@@ -20,7 +20,7 @@ section {
 
 #presentation_container {
   gap: 0.75rem;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 0 0 75px;
   background-image: url("assets/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,6 +230,22 @@ section {
   gap: 12px;
 }
 
+button:hover {
+  cursor: pointer;
+  background: #6070ff;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled {
+  background: #c1c7d0;
+  color: #5e6c84;
+}
+
 #about_me_description_container > button {
   width: 162px;
   margin-top: 12px;
@@ -293,4 +309,106 @@ section {
   height: 1px;
   background-color: #dfe1e6;
   border: none;
+}
+
+#contact_form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 24px / 16px = 1.5rem */
+  background: #6070ff;
+  border-radius: 4.6875rem 0 0 0; /* 75px / 16px = 4.6875rem */
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem; /* 24px / 16px = 1.5rem */
+  background-image: url("assets/background-form.svg");
+  background-position-x: right;
+  background-position-y: 1rem; /* 16px / 16px = 1rem */
+  background-repeat: no-repeat;
+}
+
+#contact_form_container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #ebebff;
+  padding-top: 6.4375rem;
+}
+
+#contact_form_container > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #ebebff;
+  padding: 0 1.5rem;
+  word-spacing: 0.0625rem;
+  word-break: 0.125rem;
+}
+
+#contact_form_container input {
+  height: 3rem;
+  font-weight: 400;
+  color: #172b4d;
+  font-size: 1.0625rem;
+}
+
+#contact_form_container :where(input, textarea) {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: none;
+  padding: 0 0.75rem;
+}
+
+#contact_form_container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+#contact_form_container textarea {
+  padding: 1rem 0 0 0.75rem;
+}
+
+#contact_form_container ul button {
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+@media (width >= 768px) {
+  #works_container {
+    display: flex;
+    flex-direction: column;
+    gap: 142px;
+    padding: 142px;
+  }
+
+  #works_container > .cards {
+    height: 496px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .card_img_container {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+  }
+
+  .card_img_container > img {
+    width: 100%;
+    margin: 20px 20px;
+  }
+
+  .card_description_container {
+    grid-column: 2 / 3;
+  }
+
+  .card_btn {
+    grid-column: 2/ 3;
+  }
 }
