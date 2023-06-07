@@ -311,6 +311,10 @@ button:disabled {
   border: none;
 }
 
+#form_container {
+  height: fit-content;
+}
+
 #contact_form_container {
   display: flex;
   flex-direction: column;
