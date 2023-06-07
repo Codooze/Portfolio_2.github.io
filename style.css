@@ -415,4 +415,20 @@ button:disabled {
   .card_btn {
     grid-column: 2/ 3;
   }
+
+  #contact_form_container ul {
+    align-items: center;
+  }
+
+  #contact_form_container p {
+    width: clamp(529px, 20%, 100%);
+  }
+
+  #contact_form_container :where(input, textarea) {
+    width: 447px;
+  }
+
+  #contact_form_container ul button {
+    margin-bottom: 127px;
+  }
 }
