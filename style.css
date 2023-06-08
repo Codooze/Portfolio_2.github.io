@@ -242,6 +242,7 @@ button:hover {
   cursor: pointer;
   background: #6070ff;
   color: #fff;
+  transition: background 0.3s ease-in-out;
 }
 
 button:active {
