@@ -396,6 +396,10 @@ button:disabled {
     position: fixed;
   }
 
+  #contact_form_container p {
+    width: clamp(529px, 20%, 100%);
+  }
+
   #header_container nav > div > p {
     padding: 0 143px;
   }
@@ -404,6 +408,16 @@ button:disabled {
     height: 72px;
     position: fixed;
     width: 100%;
+  }
+
+  .card_img_container > img {
+    width: 100%;
+    margin: 20px 20px;
+  }
+
+  .cards:nth-child(even) .card_img_container > img {
+    margin: 0;
+    padding-right: 20px;
   }
 
   #header_container div > img {
@@ -458,6 +472,7 @@ button:disabled {
     line-height: 28px;
     color: #344563;
   }
+
   #works_container {
     display: flex;
     flex-direction: column;
@@ -479,11 +494,6 @@ button:disabled {
     width: 100%;
   }
 
-  .card_img_container > img {
-    width: 100%;
-    margin: 20px 20px;
-  }
-
   .card_description_container {
     grid-column: 2 / 3;
   }
@@ -500,11 +510,6 @@ button:disabled {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .cards:nth-child(even) .card_img_container > img {
-    margin: 0;
-    padding-right: 20px;
   }
 
   .cards:nth-child(even) .card_description_container {
@@ -526,10 +531,6 @@ button:disabled {
 
   #contact_form_container ul {
     align-items: center;
-  }
-
-  #contact_form_container p {
-    width: clamp(529px, 20%, 100%);
   }
 
   #contact_form_container :where(input, textarea) {
