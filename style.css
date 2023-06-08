@@ -396,6 +396,11 @@ button:disabled {
     position: fixed;
   }
 
+  .dropdown-content > li > p {
+    position: relative;
+    left: 8px;
+  }
+
   #contact_form_container p {
     width: clamp(529px, 20%, 100%);
   }
@@ -576,10 +581,5 @@ button:disabled {
 
   #skills_container {
     padding: 114px 0 70px 24px;
-  }
-
-  .dropdown-content > li > p {
-    position: relative;
-    left: 8px;
   }
 }
