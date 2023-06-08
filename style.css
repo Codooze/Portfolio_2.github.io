@@ -215,6 +215,10 @@ section {
   align-self: flex-start;
 }
 
+#about_main_container {
+  height: fit-content;
+}
+
 #about_me_container {
   height: fit-content;
   padding: 114px 24px 0;
@@ -259,7 +263,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 0 24px;
+  padding: 15px 0 70px 24px;
   overflow-x: hidden;
 }
 
@@ -534,5 +538,47 @@ button:disabled {
 
   #contact_form_container ul button {
     margin-bottom: 127px;
+  }
+
+  #about_me_container {
+    width: 50%;
+  }
+
+  #about_main_container {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
+  }
+
+  #about_me_description {
+    width: clamp(447px, 20%, 100%);
+  }
+
+  .dropdown-content {
+    flex-direction: row;
+  }
+
+  #skills_container {
+    padding: 114px 0 70px 24px;
+  }
+
+  .dropdown-content > li {
+    height: 120px;
+    width: 122px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .dropdown-content > li > img {
+    position: relative;
+    left: 8px;
+    bottom: 16px;
+  }
+
+  .dropdown-content > li > p {
+    position: relative;
+    left: 8px;
   }
 }
