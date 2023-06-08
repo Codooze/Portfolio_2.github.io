@@ -415,6 +415,12 @@ button:disabled {
     margin: 20px 20px;
   }
 
+  .dropdown-content > li > img {
+    position: relative;
+    left: 8px;
+    bottom: 16px;
+  }
+
   .cards:nth-child(even) .card_img_container > img {
     margin: 0;
     padding-right: 20px;
@@ -429,6 +435,14 @@ button:disabled {
     list-style: none;
     gap: 8px;
     padding: 0 143px;
+  }
+
+  .dropdown-content > li {
+    height: 120px;
+    width: 122px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
   }
 
   #header_container ul > li {
@@ -562,20 +576,6 @@ button:disabled {
 
   #skills_container {
     padding: 114px 0 70px 24px;
-  }
-
-  .dropdown-content > li {
-    height: 120px;
-    width: 122px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .dropdown-content > li > img {
-    position: relative;
-    left: 8px;
-    bottom: 16px;
   }
 
   .dropdown-content > li > p {
