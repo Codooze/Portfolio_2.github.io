@@ -468,12 +468,13 @@ button:disabled {
     background-image: url("assets/Header\ bg.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: clamp(1397px, 100%, 2000px);
+    background-size: contain;
   }
 
   #intro_container {
     justify-self: center;
     align-self: center;
+    width: clamp(300px, 55%, 100%);
   }
 
   #greeting > h2 {
@@ -483,12 +484,15 @@ button:disabled {
   }
 
   #my_description {
-    width: 920px;
     height: 98px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #344563;
+  }
+
+  #lets_connect {
+    padding-top: 24px;
   }
 
   #works_container {
@@ -518,6 +522,7 @@ button:disabled {
   .card_description_container {
     grid-column: 2 / 3;
     padding-left: 48px;
+    padding-top: 32px;
     gap: 0;
   }
 
@@ -618,6 +623,10 @@ button:disabled {
     max-width: calc(100% - 286px);
     padding-left: 143px;
     padding-right: 143px;
+  }
+
+  #lets_connect {
+    padding-top: 0px;
   }
 
   .cards {
