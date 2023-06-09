@@ -130,7 +130,6 @@ section {
   border-radius: 1rem;
   background: #fff;
   padding: 1rem 1rem 2rem;
-  gap: 24px;
   border: 1px solid #dfe1e6;
 }
 
@@ -221,7 +220,7 @@ section {
 
 #about_me_container {
   height: fit-content;
-  padding: 114px 24px 0;
+  /* padding: 114px 24px 0; */
   font-weight: 400;
   line-height: 24px;
   color: #344563;
@@ -418,7 +417,6 @@ button:disabled {
 
   .card_img_container > img {
     width: 100%;
-    margin: 20px 20px;
   }
 
   .dropdown-content > li > img {
@@ -429,7 +427,7 @@ button:disabled {
 
   .cards:nth-child(even) .card_img_container > img {
     margin: 0;
-    padding-right: 20px;
+    padding-right: 12px;
   }
 
   #header_container div > img {
@@ -497,21 +495,24 @@ button:disabled {
     display: flex;
     flex-direction: column;
     gap: 142px;
-    padding: 142px;
+    align-items: center;
   }
 
   #works_container > .cards {
     height: 496px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
     padding: 0;
   }
 
   .card_img_container {
+    display: flex;
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
   }
 
   .card_description_container {
@@ -520,15 +521,13 @@ button:disabled {
     gap: 0;
   }
 
-  .card_btn {
-    grid-column: 2/ 3;
-    margin-left: 48px;
-    inset: -37px 0 0 0;
-    position: relative;
+  .card_description_container button {
+    margin-top: 20px;
   }
 
   #no_inset {
     inset: 0;
+    margin-left: 0;
   }
 
   .cards:nth-child(even) .card_img_container {
@@ -539,6 +538,7 @@ button:disabled {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
   }
 
   .cards:nth-child(even) .card_description_container {
@@ -550,7 +550,6 @@ button:disabled {
   .cards:nth-child(even) .card_btn {
     grid-column: 1 / 2;
     padding: 0;
-    margin-left: 48px;
   }
 
   #contact_form_container {
@@ -570,21 +569,19 @@ button:disabled {
     margin-bottom: 127px;
   }
 
-  #about_me_container {
-    width: 50%;
-  }
-
   #about_main_container {
     display: grid;
+    gap: 12px;
     flex-direction: row;
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
-    padding-right: 142px;
-    padding-bottom: 70px;
+    padding: 114px 0 114px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   #about_me_description {
-    width: clamp(447px, 20%, 100%);
+    width: min(447px, 100%);
   }
 
   .dropdown-content {
@@ -592,10 +589,11 @@ button:disabled {
   }
 
   #skills_container {
-    padding: 114px 0 0 53px;
+    /* padding: 114px 0 0 0px; */
+    padding: 0;
     justify-self: start;
     width: 100%;
-    padding-right: 142px;
+    /* padding-right: 142px; */
   }
 
   .dropdown-btn {
@@ -613,4 +611,32 @@ button:disabled {
   .separator {
     width: 100%;
   }
+}
+
+@media (width >= 1440px) {
+  #about_main_container {
+    max-width: calc(100% - 286px);
+    padding-left: 143px;
+    padding-right: 143px;
+  }
+
+  .cards {
+    height: 496px;
+  }
+  .card_img_container > img {
+    width: 544px;
+    height: 448px;
+  }
+
+  #works_container > .cards {
+    height: 496px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    width: 1156px;
+  }
+
+  /* .card_img_container > img {
+    height: 100%;
+  } */
 }
