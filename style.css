@@ -517,7 +517,7 @@ button:disabled {
   .card_description_container {
     grid-column: 2 / 3;
     padding-left: 48px;
-    gap: 0px;
+    gap: 0;
   }
 
   .card_btn {
