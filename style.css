@@ -317,6 +317,7 @@ button:disabled {
   height: 1px;
   background-color: #dfe1e6;
   border: none;
+  width: 93%;
 }
 
 #form_container {
@@ -515,10 +516,18 @@ button:disabled {
 
   .card_description_container {
     grid-column: 2 / 3;
+    padding-left: 48px;
   }
 
   .card_btn {
     grid-column: 2/ 3;
+    margin-left: 48px;
+    inset: -37px 0 0 0;
+    position: relative;
+  }
+
+  #no_inset {
+    inset: 0;
   }
 
   .cards:nth-child(even) .card_img_container {
@@ -569,6 +578,8 @@ button:disabled {
     flex-direction: row;
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
+    padding-right: 142px;
+    padding-bottom: 70px;
   }
 
   #about_me_description {
@@ -580,6 +591,29 @@ button:disabled {
   }
 
   #skills_container {
-    padding: 114px 0 70px 24px;
+    padding: 114px 0 0 53px;
+    justify-self: start;
+    width: 100%;
+    padding-right: 142px;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+  }
+
+  .card_description {
+    padding-top: 24px;
+  }
+
+  .card_languages {
+    padding-top: 28px;
+  }
+
+  .card_description_container {
+    gap: 0px;
+  }
+
+  .separator {
+    width: 100%;
   }
 }
