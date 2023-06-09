@@ -517,6 +517,7 @@ button:disabled {
   .card_description_container {
     grid-column: 2 / 3;
     padding-left: 48px;
+    gap: 0px;
   }
 
   .card_btn {
@@ -607,10 +608,6 @@ button:disabled {
 
   .card_languages {
     padding-top: 28px;
-  }
-
-  .card_description_container {
-    gap: 0px;
   }
 
   .separator {
