@@ -13,6 +13,11 @@
           <div>
             <img src="assets/menu.svg" alt="Menu icon" />
           </div>
+          <ul>
+            <li><p>Portfolio</p></li>
+            <li><p>About</p></li>
+            <li><p>Contact</p></li>
+          </ul>
         </nav>
       </header>
 
@@ -73,8 +78,8 @@
             <li>HTML</li>
             <li>CSS</li>
           </ul>
+          <button class="card_btn">See project</button>
         </div>
-        <button class="card_btn">See project</button>
       </div>
       <div class="cards">
         <div class="card_img_container">
@@ -98,8 +103,8 @@
             <li>HTML</li>
             <li>CSS</li>
           </ul>
+          <button class="card_btn">See project</button>
         </div>
-        <button class="card_btn">See project</button>
       </div>
       <div class="cards">
         <div class="card_img_container">
@@ -123,8 +128,8 @@
             <li>HTML</li>
             <li>CSS</li>
           </ul>
+          <button class="card_btn">See project</button>
         </div>
-        <button class="card_btn">See project</button>
       </div>
       <div class="cards">
         <div class="card_img_container">
@@ -148,83 +153,85 @@
             <li>HTML</li>
             <li>CSS</li>
           </ul>
+          <button class="card_btn">See project</button>
         </div>
-        <button class="card_btn">See project</button>
       </div>
     </section>
 
-    <section id="about_me_container">
-      <div id="about_me_img_container">
-        <img src="assets/aboutMeImg.png" alt="" />
+    <section id="about_main_container">
+      <div id="about_me_container">
+        <div id="about_me_img_container">
+          <img src="assets/aboutMeImg.png" alt="" />
+        </div>
+        <div id="about_me_description_container">
+          <h2 class="h2_gray_title">About myself</h2>
+          <p id="about_me_description">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <p id="lets_connect">LET'S CONNECT</p>
+          <div id="socials">
+            <ul>
+              <li>
+                <img src="assets/socials/twitter.svg" alt="Twitter icon" />
+              </li>
+              <li>
+                <img src="assets/socials/linkedin.svg" alt="Linkedin icon" />
+              </li>
+              <li>
+                <img src="assets/socials/m.svg" alt="m icon" />
+              </li>
+              <li>
+                <img src="assets/socials/github.svg" alt="Github icon" />
+              </li>
+              <li>
+                <img src="assets/socials/victory.svg" alt="victory icon" />
+              </li>
+            </ul>
+          </div>
+          <button class="card_btn" id="no_inset">Get my resume</button>
+        </div>
       </div>
-      <div id="about_me_description_container">
-        <h2 class="h2_gray_title">About myself</h2>
-        <p id="about_me_description">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website. Look through some of my work and experience! If
-          you like what you see and have a project you need coded, don’t
-          hesitate to contact me.
-        </p>
-        <p id="lets_connect">LET'S CONNECT</p>
-        <div id="socials">
-          <ul>
+
+      <div id="skills_container">
+        <ul class="dropdown">
+          <li class="dropdown-btn">
+            <p>Languages</p>
+            <img src="assets/arrow/arrow.svg" alt="" />
+          </li>
+          <ul class="dropdown-content">
             <li>
-              <img src="assets/socials/twitter.svg" alt="Twitter icon" />
+              <img src="assets/languages/js.svg" alt="javascript" />
+              <p>JavaScript</p>
             </li>
             <li>
-              <img src="assets/socials/linkedin.svg" alt="Linkedin icon" />
+              <img src="assets/languages/html.svg" alt="html" />
+              <p>HTML</p>
             </li>
             <li>
-              <img src="assets/socials/m.svg" alt="m icon" />
-            </li>
-            <li>
-              <img src="assets/socials/github.svg" alt="Github icon" />
-            </li>
-            <li>
-              <img src="assets/socials/victory.svg" alt="victory icon" />
+              <img src="assets/languages/css.svg" alt="css" />
+              <p>CSS</p>
             </li>
           </ul>
-        </div>
-        <button class="card_btn">Get my resume</button>
-      </div>
-    </section>
-
-    <section id="skills_container">
-      <ul class="dropdown">
-        <li class="dropdown-btn">
-          <p>Languages</p>
-          <img src="assets/arrow/arrow.svg" alt="" />
-        </li>
-        <ul class="dropdown-content">
-          <li>
-            <img src="assets/languages/js.svg" alt="javascript" />
-            <p>JavaScript</p>
-          </li>
-          <li>
-            <img src="assets/languages/html.svg" alt="html" />
-            <p>HTML</p>
-          </li>
-          <li>
-            <img src="assets/languages/css.svg" alt="css" />
-            <p>CSS</p>
+        </ul>
+        <ul class="dropdown">
+          <li class="dropdown-btn">
+            <p>Frameworks</p>
+            <img class="isActive_false" src="assets/arrow/arrow.svg" alt="" />
           </li>
         </ul>
-      </ul>
-      <ul class="dropdown">
-        <li class="dropdown-btn">
-          <p>Frameworks</p>
-          <img class="isActive_false" src="assets/arrow/arrow.svg" alt="" />
-        </li>
-      </ul>
-      <!-- add a separator with this color DFE1E height of 1px-->
-      <hr class="separator" />
-      <ul class="dropdown">
-        <li class="dropdown-btn">
-          <p>Skills</p>
-          <img class="isActive_false" src="assets/arrow/arrow.svg" alt="" />
-        </li>
-      </ul>
-      <hr class="separator" />
+        <!-- add a separator with this color DFE1E height of 1px-->
+        <hr class="separator" />
+        <ul class="dropdown">
+          <li class="dropdown-btn">
+            <p>Skills</p>
+            <img class="isActive_false" src="assets/arrow/arrow.svg" alt="" />
+          </li>
+        </ul>
+        <hr class="separator" />
+      </div>
     </section>
 
     <section id="form_container">
@@ -269,7 +276,7 @@
             ></textarea>
           </li>
           <li>
-            <button class="card_btn">Get in touch</button>
+            <button class="card_btn" id="no_inset">Get in touch</button>
           </li>
         </ul>
       </form>

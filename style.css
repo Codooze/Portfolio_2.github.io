@@ -46,6 +46,10 @@ section {
   align-items: center;
 }
 
+#header_container ul {
+  display: none;
+}
+
 #logo {
   font-size: large;
   font-weight: bold;
@@ -126,7 +130,6 @@ section {
   border-radius: 1rem;
   background: #fff;
   padding: 1rem 1rem 2rem;
-  gap: 24px;
   border: 1px solid #dfe1e6;
 }
 
@@ -211,9 +214,13 @@ section {
   align-self: flex-start;
 }
 
+#about_main_container {
+  height: fit-content;
+  padding: 114px 24px;
+}
+
 #about_me_container {
   height: fit-content;
-  padding: 114px 24px 0;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
@@ -255,7 +262,6 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 0 24px;
   overflow-x: hidden;
 }
 
@@ -309,6 +315,7 @@ button:disabled {
   height: 1px;
   background-color: #dfe1e6;
   border: none;
+  width: 93%;
 }
 
 #form_container {
@@ -382,37 +389,257 @@ button:disabled {
 }
 
 @media (width >= 768px) {
+  #header_container {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+  }
+
+  .dropdown-content > li > p {
+    position: relative;
+    left: 8px;
+  }
+
+  #contact_form_container p {
+    width: clamp(529px, 20%, 100%);
+  }
+
+  #header_container nav > div > p {
+    padding: 0 143px;
+  }
+
+  #header_container > nav {
+    height: 72px;
+    position: fixed;
+    width: 100%;
+  }
+
+  .card_img_container > img {
+    width: 100%;
+  }
+
+  .dropdown-content > li > img {
+    position: relative;
+    left: 8px;
+    bottom: 16px;
+  }
+
+  .cards:nth-child(even) .card_img_container > img {
+    margin: 0;
+    padding-right: 12px;
+  }
+
+  #header_container div > img {
+    display: none;
+  }
+
+  #header_container ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    padding: 0 143px;
+  }
+
+  .dropdown-content > li {
+    height: 120px;
+    width: 122px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #header_container ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 40px;
+  }
+
+  #header_container ul > li > p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  #presentation_container {
+    background-image: url("assets/Header\ bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #intro_container {
+    justify-self: center;
+    align-self: center;
+    width: clamp(300px, 55%, 100%);
+  }
+
+  #greeting > h2 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  #my_description {
+    height: 98px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  #lets_connect {
+    padding-top: 24px;
+  }
+
   #works_container {
     display: flex;
     flex-direction: column;
     gap: 142px;
-    padding: 142px;
+    align-items: center;
   }
 
   #works_container > .cards {
     height: 496px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
     padding: 0;
   }
 
   .card_img_container {
+    display: flex;
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
     width: 100%;
-  }
-
-  .card_img_container > img {
-    width: 100%;
-    margin: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
   }
 
   .card_description_container {
     grid-column: 2 / 3;
+    padding-left: 48px;
+    padding-top: 32px;
+    gap: 0;
   }
 
-  .card_btn {
-    grid-column: 2/ 3;
+  .card_description_container button {
+    margin-top: 20px;
+  }
+
+  #no_inset {
+    inset: 0;
+    margin-left: 0;
+  }
+
+  .cards:nth-child(even) .card_img_container {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .cards:nth-child(even) .card_description_container {
+    grid-column: 1 / 2;
+    padding-left: 48px;
+    margin: 0;
+  }
+
+  .cards:nth-child(even) .card_btn {
+    grid-column: 1 / 2;
+    padding: 0;
+  }
+
+  #contact_form_container {
+    background-image: url("assets/background-formDesktop.svg");
+    background-position: center;
+  }
+
+  #contact_form_container ul {
+    align-items: center;
+  }
+
+  #contact_form_container :where(input, textarea) {
+    width: 447px;
+  }
+
+  #contact_form_container ul button {
+    margin-bottom: 127px;
+  }
+
+  #about_main_container {
+    display: grid;
+    gap: 12px;
+    flex-direction: row;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
+    padding: 114px 0 114px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  #about_me_description {
+    width: min(447px, 100%);
+  }
+
+  .dropdown-content {
+    flex-direction: row;
+  }
+
+  #skills_container {
+    padding: 0;
+    justify-self: start;
+    width: 100%;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+  }
+
+  .card_description {
+    padding-top: 24px;
+  }
+
+  .card_languages {
+    padding-top: 28px;
+  }
+
+  .separator {
+    width: 100%;
+  }
+}
+
+@media (width >= 1440px) {
+  #about_main_container {
+    max-width: calc(100% - 286px);
+    padding-left: 143px;
+    padding-right: 143px;
+  }
+
+  #lets_connect {
+    padding-top: 0;
+  }
+
+  .cards {
+    height: 496px;
+  }
+
+  .card_img_container > img {
+    width: 544px;
+    height: 448px;
+  }
+
+  #works_container > .cards {
+    height: 496px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    width: 1156px;
   }
 }
