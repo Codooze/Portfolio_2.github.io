@@ -28,7 +28,7 @@
 
 # 📖 Jeison's Porfolio <a name="about-project"></a>
 
-This is a portfolio project, that is using some linter checks, the project is mobile first, and it is responsive.
+This is a portfolio project, that is using some linter checks, the project is mobile first, and it is responsive. You can see the live demo [here](https://mehr-o-maah.github.io/Portfolio_2.github.io/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
