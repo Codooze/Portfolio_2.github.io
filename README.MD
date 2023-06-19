@@ -46,7 +46,7 @@ This is a portfolio project, that is using some linter checks, the project is mo
 - Mobile first
 - Responsive design
 - Linter checks
-- Good looking 👌
+- Good looking 👌🌟
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
