@@ -5,7 +5,7 @@
   <br/>
 
 </div>
-
+ 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -135,7 +135,7 @@ If you like this project, give it a ⭐️! and if you want to support me, follo
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank, Microverse for this amazing opportunity, and the amazing code reviewers for their support and feedback.
-
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
