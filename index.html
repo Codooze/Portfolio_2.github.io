@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <section id="presentation_container">
@@ -11,7 +12,12 @@
         <nav>
           <div><p id="logo">My logo</p></div>
           <div>
-            <img src="assets/menu.svg" alt="Menu icon" />
+            <img
+              class="menu"
+              id="firstHeading"
+              src="assets/menu.svg"
+              alt="Menu icon"
+            />
           </div>
           <ul>
             <li><p>Portfolio</p></li>
@@ -21,15 +27,22 @@
         </nav>
       </header>
 
-      <div class="mobile-menu">
-        <img class="menu-x" src="assets/mobile-menu-Icon-x.png" alt="menu x">
+      <div class="mobile-menu glass">
+        <img class="menu-x" src="assets/mobile-menu-Icon-x.png" alt="menu x" />
         <ul class="mobile-menu-ul">
-          <li><a class="mobile-menu-option" href="#portfolio-section-link">Portfolio</a></li>
-          <li><a class="mobile-menu-option" href="#about-section-link">About</a></li>
-          <li><a class="mobile-menu-option" href="#contact-section-link">Contact</a></li>
+          <li>
+            <a class="mobile-menu-option" href="#works_container">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-menu-option" href="#about_main_container">About</a>
+          </li>
+          <li>
+            <a class="mobile-menu-option" href="#contact_form_container"
+              >Contact</a
+            >
+          </li>
         </ul>
-      </div> 
-
+      </div>
 
       <div id="intro_container">
         <div id="greeting">

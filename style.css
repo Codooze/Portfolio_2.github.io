@@ -662,6 +662,8 @@ button:disabled {
 }
 
 .mobile-menu-ul {
+  color: #fff;
+
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -683,9 +685,12 @@ button:disabled {
 
 li {
   list-style: none;
- 
 }
 
 a {
   text-decoration: none;
+}
+
+.menu-hidden {
+  visibility: hidden;
 }
