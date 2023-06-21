@@ -525,6 +525,28 @@ button:disabled {
 }
 
 @media (width >= 768px) {
+  
+  .modal_container .card_description_container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 3.68rem 0 0 0;
+  }
+  .modal_container hr {
+    margin: 0.75rem 0;
+  }
+  .modal_container .card_btn {
+    margin-top: 0;
+  }
+  .modal_container .card_languages {
+    padding-top: 0;
+  }
+  .modal_container .card_img_container {
+    padding: 0;
+  }
+  .modal_container .card_img_container > img {
+    padding: 0;
+  }
+
   .card_img_container > img {
     max-width: 1108px;
     padding-left: 16px;
