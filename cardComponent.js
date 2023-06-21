@@ -23,7 +23,7 @@ cardsData.forEach((cardData) => {
         </div>
         <p class="card_description">${cardData.description}</p>
         <ul class="card_languages">
-          ${cardData.languages.map((language) => `<li>${language}</li>`).join("")}
+          ${cardData.languages.slice(0, 3).map((language) => `<li>${language}</li>`).join("")}
         </ul>
         <button class="card_btn">See project</button>
       </div>
@@ -67,13 +67,15 @@ buttons.forEach((button, index) => {
         </div>
         <div class="card_description_container">
           <p class="card_description">${cardData.longDescription.replace(/\n/g, "<br>")}</p>
-          <ul class="card_languages">
-            ${cardData.languages.map((language) => `<li>${language}</li>`).join("")}
-          </ul>
-          <hr/>
-          <div class="card_btn_container">
-            <button class="card_btn"><p>See live</p> <img src="assets/seeLive.svg"/></button>
-            <button class="card_btn"><p>See source</p> <img src="assets/GitHub.svg"</button>
+          <div class="leftSide_container">
+            <ul class="card_languages">
+              ${cardData.languages.map((language) => `<li>${language}</li>`).join("")}
+            </ul>
+            <hr/>
+            <div class="card_btn_container">
+              <button class="card_btn"><p>See live</p> <img src="assets/seeLive.svg"/></button>
+              <button class="card_btn"><p>See source</p> <img src="assets/GitHub.svg"</button>
+            </div>
           </div>
         </div>
       </div>
