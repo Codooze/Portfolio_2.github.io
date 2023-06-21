@@ -159,6 +159,7 @@ a {
 }
 
 .modal_content {
+  max-width: 1156px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -207,10 +208,6 @@ a {
 .modal_container .card_btn:hover p {
   cursor: pointer;
   color: #fff;
-}
-
-.modal_container .card_btn svg {
-  fill: #601313 !important;
 }
 
 .modal_container .close_menu {
@@ -527,6 +524,11 @@ button:disabled {
 }
 
 @media (width >= 768px) {
+  .card_img_container > img {
+    max-width: 1108px;
+    padding-left: 16px;
+  }
+
   #header_container {
     padding: 0;
     width: 100%;
@@ -564,7 +566,7 @@ button:disabled {
 
   .cards:nth-child(even) .card_img_container > img {
     margin: 0;
-    padding-right: 12px;
+    padding-right: 23px;
   }
 
   #header_container div > img {
@@ -766,11 +768,6 @@ button:disabled {
 
   .cards {
     height: 496px;
-  }
-
-  .card_img_container > img {
-    width: 544px;
-    height: 448px;
   }
 
   #works_container > .cards {

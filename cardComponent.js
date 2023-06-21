@@ -65,7 +65,7 @@ buttons.forEach((button, index) => {
         <div class="card_img_container">
           <img src="${cardData.imgSrc}" alt="Project preview image">
         </div>
-        <p class="card_description">${cardData.longDescription}</p>
+        <p class="card_description">${cardData.longDescription.replace(/\n/g, "<br>")}</p>
         <ul class="card_languages">
           ${cardData.languages.map((language) => `<li>${language}</li>`).join("")}
         </ul>
