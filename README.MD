@@ -24,7 +24,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📝 License](#licens
 
 # 📖 Jeison's Porfolio <a name="about-project"></a>
 
