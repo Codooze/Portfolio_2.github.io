@@ -239,8 +239,17 @@ a {
   font-size: 0.8125rem;
 }
 
+.dropdown-btn > p {
+  padding-left: 12px;
+}
+
 .modal_container .card_btn p {
   color: #396df2;
+}
+
+.dropdown-content > li > p {
+  position: relative;
+  left: 24px;
 }
 
 .modal_container .card_btn:hover p {
@@ -418,10 +427,6 @@ button:disabled {
   justify-content: space-between;
 }
 
-.dropdown-btn > p {
-  padding-left: 12px;
-}
-
 .dropdown-btn > .isActive_false {
   transform: rotate(-0.25turn);
   padding: 0 0 65px 0;
@@ -442,11 +447,6 @@ button:disabled {
   display: flex;
   align-items: center;
   border-radius: 8px;
-}
-
-.dropdown-content > li > p {
-  position: relative;
-  left: 24px;
 }
 
 .separator {
@@ -551,17 +551,33 @@ button:disabled {
     padding-top: 0;
   }
 
-  .modal_container .card_img_container {
-    padding: 0;
+  .card_img_container {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
   }
 
-  .modal_container .card_img_container > img {
+  .modal_container .card_img_container {
     padding: 0;
   }
 
   .card_img_container > img {
     max-width: 1108px;
     padding-left: 16px;
+  }
+
+  .dropdown-content > li > img {
+    position: relative;
+    left: 8px;
+    bottom: 16px;
+  }
+
+  .modal_container .card_img_container > img {
+    padding: 0;
   }
 
   .modal_container .card_languages {
@@ -578,7 +594,7 @@ button:disabled {
   }
 
   .modal_container .card_description {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 6.94rem;
   }
 
@@ -605,16 +621,6 @@ button:disabled {
     height: 72px;
     position: fixed;
     width: 100%;
-  }
-
-  .card_img_container > img {
-    width: 100%;
-  }
-
-  .dropdown-content > li > img {
-    position: relative;
-    left: 8px;
-    bottom: 16px;
   }
 
   .cards:nth-child(even) .card_img_container > img {
@@ -699,16 +705,6 @@ button:disabled {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
-  }
-
-  .card_img_container {
-    display: flex;
-    grid-column: 1 / 2;
-    grid-row: 1 / span 2;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-left: 7px;
   }
 
   .card_description_container {
