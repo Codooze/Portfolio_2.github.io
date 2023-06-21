@@ -170,6 +170,14 @@ a {
   font-size: 32px;
 }
 
+.card_languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
 .modal_content .card_languages {
   justify-content: start;
 }
@@ -203,6 +211,12 @@ a {
   gap: 8px;
 }
 
+.card_projectType_container > p {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
 .modal_container .card_btn p {
   color: #396df2;
 }
@@ -218,10 +232,6 @@ a {
 
 .modal_container .leftSide_container {
   width: 100%;
-}
-
-.card_projectType_container > p {
-  color: #7a869a;
 }
 
 .card_projectType_container > div {
@@ -297,11 +307,6 @@ a {
   line-height: 44px;
 }
 
-.card_projectType_container > p {
-  font-weight: 600;
-  font-size: 0.8125rem;
-}
-
 .card_projectType_container > .canopy {
   color: #344563;
   line-height: 1rem;
@@ -320,14 +325,6 @@ a {
   display: flex;
   align-items: center;
   color: #344563;
-}
-
-.card_languages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  list-style: none;
 }
 
 .card_languages > li {
