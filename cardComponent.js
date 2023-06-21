@@ -1,5 +1,4 @@
-import cardsData from './cardData.js'
-
+import cardsData from './cardData.js';
 
 //   Get the container element
 const worksContainer = document.getElementById('works_container');
@@ -42,7 +41,6 @@ buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     // Get the card data for the clicked button
     const cardData = cardsData[index];
-    console.log(cardData);
 
     // Create the modal element
     const modal = document.createElement('dialog');
