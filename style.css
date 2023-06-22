@@ -582,6 +582,7 @@ button:disabled {
   }
 
   .card_img_container > img {
+    width: 100%;
     max-width: 1108px;
     padding-left: 16px;
   }
