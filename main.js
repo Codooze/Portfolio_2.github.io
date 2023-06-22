@@ -133,11 +133,12 @@ buttons.forEach((button, index) => {
       // submit contact form
       form.addEventListener('submit', (event) => {
         event.preventDefault();
-        if (validateEmail())
+        if (validateEmail()) {
           form.submit();
+        }
         else return false;
       });
-      return true;
+      return false;
     }
 
     // Modal logic
@@ -195,5 +196,6 @@ buttons.forEach((button, index) => {
       // close the modal
       modal.remove();
     });
+    return true;
   });
 });
