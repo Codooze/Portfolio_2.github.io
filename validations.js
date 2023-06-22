@@ -1,11 +1,6 @@
 const form = document.getElementById('contact_form_container');
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  validateEmail();
-});
-
-function validateEmail() {
+const validateEmail = () => {
   const emailInput = document.getElementById('email');
   const emailValue = emailInput.value;
   const lowercaseEmail = emailValue.toLowerCase();
@@ -18,4 +13,9 @@ function validateEmail() {
 
   // Email is valid, submit the form or perform other actions
   return true;
-}
+};
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  validateEmail();
+});
