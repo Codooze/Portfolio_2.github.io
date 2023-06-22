@@ -526,6 +526,13 @@ button:disabled {
   margin-bottom: 2rem;
 }
 
+#error {
+  color: #f00;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
 @media screen and (max-width: 767px) {
   .card_languages li:nth-child(n + 4) {
     display: none;
@@ -582,6 +589,7 @@ button:disabled {
   }
 
   .card_img_container > img {
+    width: 100%;
     max-width: 1108px;
     padding-left: 16px;
   }
