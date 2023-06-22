@@ -135,7 +135,7 @@ buttons.forEach((button, index) => {
         event.preventDefault();
         if (validateEmail()) {
           form.submit();
-        };
+        }
       });
       return false;
     }
@@ -197,5 +197,5 @@ buttons.forEach((button, index) => {
     });
     return true;
   });
-  return false
+  return false;
 });
