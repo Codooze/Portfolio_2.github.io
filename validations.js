@@ -15,7 +15,7 @@ const validateEmail = () => {
   return true;
 };
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   validateEmail();
 });
