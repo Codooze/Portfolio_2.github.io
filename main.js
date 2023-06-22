@@ -81,7 +81,7 @@ cardsData.forEach((cardData) => {
 // Get the button elements
 const buttons = document.querySelectorAll('.card_btn');
 
-//validation logic for contact form
+// validation logic for contact form
 const form = document.getElementById('contact_form_container');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -100,7 +100,7 @@ const saveFormData = () => {
 
   const formData = { name, email, message };
   localStorage.setItem('formData', JSON.stringify(formData));
-}
+};
 
 // Save form data to local storage on each keystroke
 nameInput.addEventListener('input', saveFormData);
@@ -128,13 +128,16 @@ buttons.forEach((button, index) => {
     // Get the card data for the clicked button
     const cardData = cardsData[index];
 
-    //the button with index 5 is the contact button
-    if (index === 5) {      //submit contact form
+    // the button with index 5 is the contact button
+    if (index === 5) {
+      // submit contact form
       form.addEventListener('submit', (event) => {
         event.preventDefault();
-        validateEmail() ? form.submit() : null;
+        if (validateEmail())
+          form.submit();
+        else return false;
       });
-      return true
+      return true;
     }
 
     // Modal logic
