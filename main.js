@@ -146,24 +146,24 @@ buttons.forEach((button, index) => {
     const modalHtml = `
       <div class='modal_content'>
       <div class='modal_title_container'>
-        <h3>${cardData?.title}</h3>
+        <h3>${cardData.title}</h3>
         <img class='close_menu' src='assets/Enabled_X.svg' alt='menu x' />
       </div>
         <div class='card_projectType_container'>
           <p class='canopy'>CANOPY</p>
           <div>●</div>
-          <p class='project_type'>${cardData?.projectType}</p>
+          <p class='project_type'>${cardData.projectType}</p>
           <div>●</div>
-          <p class='project_year'>${cardData?.year}</p>
+          <p class='project_year'>${cardData.year}</p>
         </div>
         <div class='card_img_container'>
-          <img src='${cardData?.imgSrc}' alt='Project preview image'>
+          <img src='${cardData.imgSrc}' alt='Project preview image'>
         </div>
         <div class='card_description_container'>
-          <p class='card_description'>${cardData?.longDescription.replace(/\n/g, '<br>')}</p>
+          <p class='card_description'>${cardData.longDescription.replace(/\n/g, '<br>')}</p>
           <div class='leftSide_container'>
             <ul class='card_languages'>
-              ${cardData?.languages.map((language) => `<li>${language}</li>`).join('')}
+              ${cardData.languages.map((language) => `<li>${language}</li>`).join('')}
             </ul>
             <hr/>
             <div class='card_btn_container'>
