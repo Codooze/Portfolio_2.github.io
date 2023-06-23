@@ -81,11 +81,7 @@ cardsData.forEach((cardData) => {
 // Get the button elements
 const buttons = document.querySelectorAll('.card_btn');
 
-// validation logic for contact form
-const form = document.getElementById('contact_form_container');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
+
 
 // Load form data from local storage if available
 const formData = JSON.parse(localStorage.getItem('formData')) || {};
