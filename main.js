@@ -86,25 +86,25 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 
-// Load form data from local storage if available
-const formData = JSON.parse(localStorage.getItem('formData')) || {};
-nameInput.value = formData.name || '';
-emailInput.value = formData.email || '';
-messageInput.value = formData.message || '';
+// // Load form data from local storage if available
+// const formData = JSON.parse(localStorage.getItem('formData')) || {};
+// nameInput.value = formData.name || '';
+// emailInput.value = formData.email || '';
+// messageInput.value = formData.message || '';
 
-const saveFormData = () => {
-  const name = nameInput.value;
-  const email = emailInput.value;
-  const message = messageInput.value;
+// const saveFormData = () => {
+//   const name = nameInput.value;
+//   const email = emailInput.value;
+//   const message = messageInput.value;
 
-  const formData = { name, email, message };
-  localStorage.setItem('formData', JSON.stringify(formData));
-};
+//   const formData = { name, email, message };
+//   localStorage.setItem('formData', JSON.stringify(formData));
+// };
 
-// Save form data to local storage on each keystroke
-nameInput.addEventListener('input', saveFormData);
-emailInput.addEventListener('input', saveFormData);
-messageInput.addEventListener('input', saveFormData);
+// // Save form data to local storage on each keystroke
+// nameInput.addEventListener('input', saveFormData);
+// emailInput.addEventListener('input', saveFormData);
+// messageInput.addEventListener('input', saveFormData);
 
 const validateEmail = () => {
   const emailInput = document.getElementById('email');
