@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -28,7 +29,7 @@
 
 # 📖 Jeison's Porfolio <a name="about-project"></a>
 
-This is a portfolio project, that is using some linter checks, the project is mobile first, and it is responsive. You can see the live demo [here](https://mehr-o-maah.github.io/Portfolio_2.github.io/)
+This is a portfolio project, that is using some linter checks, the project is mobile first, and it is responsive.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,6 +48,12 @@ This is a portfolio project, that is using some linter checks, the project is mo
 - Responsive design
 - Linter checks
 - Good looking 👌🌟
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://codooze.github.io/Portfolio_2.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
