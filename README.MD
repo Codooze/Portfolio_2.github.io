@@ -101,7 +101,7 @@ You can deploy this project using, vercel or any prefer deployment platform.
 
 👤 **Author1**
 
-- GitHub: [@Mehr-o-maah](https://github.com/Mehr-o-maah)
+- GitHub: [@Codooze](https://github.com/Codooze)
 - Twitter: [@\_M_Jace\_\_](https://twitter.com/_M_Jace__)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
