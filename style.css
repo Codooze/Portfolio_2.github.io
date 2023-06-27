@@ -278,6 +278,10 @@ a {
   align-items: center;
 }
 
+.card_img_container img {
+  width: 100%;
+}
+
 .dropdown-btn > img {
   padding-right: 32px;
 }
@@ -417,7 +421,6 @@ button:disabled {
 }
 
 .dropdown-btn {
-  width: 327px;
   height: 72px;
   display: flex;
   align-items: center;
