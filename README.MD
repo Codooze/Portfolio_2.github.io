@@ -53,9 +53,7 @@ This is a portfolio project, that is using some linter checks, the project is mo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://mehr-o-maah.github.io/Portfolio_2.github.io/)
+- [Live Demo Link](https://codooze.github.io/Portfolio_2.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
